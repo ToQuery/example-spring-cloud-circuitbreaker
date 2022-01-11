@@ -12,8 +12,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.0.BUILD-SNAPSHOT</version>
-        <relativePath />
+        <version>2.6.2</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <properties>
         <maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
@@ -21,7 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Hoxton.BUILD-SNAPSHOT</spring-cloud.version>
+        <spring-cloud.version>2021.0.0</spring-cloud.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -35,8 +35,10 @@
         </dependencies>
     </dependencyManagement>
     <modules>
+        <!--
         <module>spring-cloud-circuitbreaker-demo-hystrix</module>
         <module>spring-cloud-circuitbreaker-demo-reactive-hystrix</module>
+        -->
         <module>spring-cloud-circuitbreaker-demo-resilience4j</module>
         <module>spring-cloud-circuitbreaker-demo-reactive-resilience4j</module>
         <module>spring-cloud-circuitbreaker-demo-reactive</module>
